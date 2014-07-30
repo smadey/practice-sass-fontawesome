@@ -1,0 +1,42 @@
+// @import "base";
+
+@import "bootstrap";
+
+@import "font-awesome";
+
+@import "form";
+
+
+$font-size: 10px;
+$fa-size: 90px;
+
+.fa-hover {
+
+    & > a {
+        border-radius: 4px;
+        color: #222;
+        display: block;
+        font-size: $font-size * 1.4;
+        height: $fa-size;
+        line-height: $fa-size;
+        padding-left: 10px;
+        vertical-align: top;
+
+        & > .fa {
+            font-size: $font-size * 1.6;
+            line-height: $fa-size;
+            text-align: center;
+            width: $fa-size;
+        }
+
+        &:hover {
+            background-color: #1d9d74;
+            color: #fff;
+            text-decoration: none;
+
+            & > .fa {
+                font-size: $font-size * 2.6;
+            }
+        }
+    }
+}
